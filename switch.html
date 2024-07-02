@@ -1,0 +1,19 @@
+<script>
+  let key = prompt("Enter full name of one of your trio in Harry Potter!!");
+  if (confirm("Is that name Okay ?") != true) {
+    key = prompt("Enter Correct spelling...");
+  }
+  switch (key) {
+    case "Harry Potter":
+      alert("Hello Harry Potter!");
+      break;
+    case "Ron Weasley":
+      alert("Hello Ron Weasley!");
+      break;
+    case "Hermione Granger":
+      alert("Hello Hermione Granger!");
+      break;
+    default:
+      alert("Enter correct key");
+  }
+</script>

@@ -1,0 +1,36 @@
+<script>
+  let a = {
+    fname: "vikas",
+    lname: "jain",
+    age: 23,
+    email: "jainvikas@gmail.com",
+
+    favMovies: ["dhoom", "sholay", "Hum"], //object array
+
+    //ek or object ke andar object  //
+    living: {
+      city: "Gwalior",
+      country: "India",
+    },
+    salary: function () {
+      //function
+      return 25000;
+    },
+    fullname: function () {
+      fname = "raj";
+      //return this.fname + " " + this.lname;  //(var a ke liye this use)
+      return this.fname;
+    },
+  };
+  //end object
+  //document.write(a.fname);
+  // document.write(a.fname);
+  // document.write(a.favMovies);
+  //document.write(a.salary());
+  document.write(a.fullname());
+  //document.write(a.living.city);
+  //document.write(a.living.country);
+  //document.write(JSON.stringify(a))
+  console.log(a);
+  //console.log(a.age);
+</script>

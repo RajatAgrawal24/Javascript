@@ -1,0 +1,69 @@
+<script>
+    var a=["sneha" , "rajat" , "mitra" , "neerja"];
+    document.write(a +"<br><br>");
+
+    //last value delete
+    a.pop();
+    document.write(a +"<br><br>");
+
+    //add at last
+    a.push("priyanshu");
+    document.write(a +"<br><br>");
+
+    //delete at first
+    a.shift();
+    document.write(a +"<br><br>");
+
+    //add at first
+    a.unshift("priyanshu");
+    document.write(a +"<br><br>");
+
+    //selecting a part of array
+    let b=a.slice(0,3); //last index excluded
+    document.write(b +"<br><br>");
+
+    //selecting a part of array from end of array
+    let c=a.slice(-3,-1);
+    document.write(c +"<br><br>");
+
+    //to delete a no. of elements
+    a.splice(0,2); //(starting index , no. of elements to delete)
+    document.write(a +"<br><br>");
+    a.splice(0,0);
+    document.write(a +"<br><br>");
+    a.splice(1,0,"sneha"); //add more elements to the deleted index
+    document.write(a +"<br><br>");
+
+    //to check whether array contains that element or not
+    let d=a.includes("neerja");
+    document.write(d +"<br><br>");
+    let e=a.includes("sneha");
+    document.write(e +"<br><br>");
+
+    //to find index of element
+    var f=a.indexOf("mitra",3); // end index represent index from which it starts searching
+    document.write(f +"<br><br>");
+    a.push("mitra");
+
+    //to find index of element from last
+    var g=a.lastIndexOf("mitra",3); // end index represent index from which it starts searching
+    document.write(g +"<br><br>");
+
+    //adding two arrays
+    var h=a.concat(b);
+    document.write(h +"<br><br>");
+
+    //to replace comma(,) while printing
+    let i=h.join("->");
+    document.write(i +"<br><br>");
+
+    a.shift();
+    a.unshift("neerja");
+    //sorting of array
+    a.sort();
+    document.write(a +"<br><br>");
+
+    //reverse an array
+    a.reverse();
+    document.write(a +"<br><br>");
+</script>

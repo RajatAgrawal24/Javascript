@@ -1,0 +1,19 @@
+<script>
+  let totalAmount =4000 ;
+  let discount = 0;
+
+  if (totalAmount >= 1000 && totalAmount < 2000) {
+    discount = 10;
+  } else if (totalAmount >= 2000 && totalAmount < 3000) {
+    discount = 20;
+  } else if (totalAmount >= 3000) {
+    discount = 30;
+  } else {
+    discount = 0;
+  }
+
+  document.write(
+    "Your Total Amount is "+ totalAmount+
+    "<br> You are eligible for "+discount+"% discount."
+  );
+</script>

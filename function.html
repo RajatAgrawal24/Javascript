@@ -1,0 +1,38 @@
+<script>
+  //function
+  function print() {
+    document.write("Yo!!");
+  }
+
+  //function calling
+  print();
+  document.write("<br>");
+
+  //function with Parameter
+  function add(a, b) {
+    let c = a + b;
+    document.write(c + "<br>");
+  }
+  //function calling
+  add(12 , 20);
+
+  //function with return value
+  function sub(a, b) {
+    return a - b;
+  }
+  document.write(sub(20, 10)+"<br>");
+
+  //Example
+  function sum(math, eng, sc) {
+    let s = math + eng + sc;
+    return s;
+  }
+  function percentage(total) {
+    let per = (total / 300) * 100;
+    document.write("Percentage : "+per);
+  }
+
+  let total = sum(40, 40, 40);
+  document.write("Total : "+total +"<br>");
+  percentage(total);
+</script>

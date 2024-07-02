@@ -1,0 +1,28 @@
+<script>
+    //function with return value
+    function mul(a, b) {
+        let c=a*b;
+        return c;
+    }
+    //function to print table
+    function print(a, b ,c) {
+        document.write(a+"*"+b+"="+c+"<br>");
+    }
+
+    //for loop
+    for(var i=1; i<=10 ; i++) {
+        let a = 5;
+
+        //function calling
+        print(a,i,mul(a,i));
+    }
+    document.write("<br>");
+    document.write("<br>");
+    //do-while loop
+    let j=1;
+    do{
+        document.write("Kya Baat Hai!!<br>");
+        j++;
+    }
+    while(j<4);
+</script>

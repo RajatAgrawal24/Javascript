@@ -1,0 +1,28 @@
+<script>
+    var age = [1 , 7 , 3 , 10];
+    document.write(age + "<br><br>");
+    
+    function checkAdult(age) {
+        return age>=6;
+    }
+
+    //to print all values satisfying the condition
+    var adults = age.filter(checkAdult);
+    document.write(adults + "<br><br>");
+
+    //to find first value satisfying the condition
+    var b = age.find(checkAdult);
+    document.write(b + "<br><br>");
+
+    //to find index of first value satisfying the condition
+    var c = age.findIndex(checkAdult);
+    document.write(c + "<br><br>");
+
+    //to check if any of value in array satisfies the condition
+    var d = age.some(checkAdult);
+    document.write(d + "<br><br>");
+
+    //to check if all values of array satisfies the condition simultaneously
+    var e=age.every(checkAdult);
+    document.write(e + "<br><br>");
+</script>
